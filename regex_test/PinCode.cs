@@ -12,9 +12,9 @@ namespace regex_test
             Console.WriteLine("Enter the pincode :");
             String input_PinCode = Console.ReadLine();
 
-            String pattern = "[0-9]{6}";
+            String pattern = "^[1-9]{1}[0-9]{2}[0-9]{2}[0-9]{1}$";
             
-            Regex regex = new Regex(pattern);
+            Regex regex = new Regex(@pattern);
 
             Match match = regex.Match(input_PinCode);
             if (match.Success)
