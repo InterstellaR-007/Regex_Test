@@ -12,7 +12,7 @@ namespace regex_test
             Console.WriteLine("Enter the pincode :");
             String input_PinCode = Console.ReadLine();
 
-            String pattern = "^(![a-zA-Z][0-9]){6}";
+            String pattern = "^[1-9]{1}[0-9]{2}[0-9]{3}$";
             
             Regex regex = new Regex(@pattern);
 
